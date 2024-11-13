@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matemātiskais Kalkulators ar Vēsturi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Matemātiskais Kalkulators</h1>
+    
+    <!-- Kalkulatora Ievades lauks -->
+    <input id="display" type="text" readonly />
+    
+    <!-- Kalkulatora pogas -->
+    <div class="buttons">
+      <button onclick="addToDisplay('7')">7</button>
+      <button onclick="addToDisplay('8')">8</button>
+      <button onclick="addToDisplay('9')">9</button>
+      <button onclick="addToDisplay('+')">+</button>
+      
+      <button onclick="addToDisplay('4')">4</button>
+      <button onclick="addToDisplay('5')">5</button>
+      <button onclick="addToDisplay('6')">6</button>
+      <button onclick="addToDisplay('-')">-</button>
+      
+      <button onclick="addToDisplay('1')">1</button>
+      <button onclick="addToDisplay('2')">2</button>
+      <button onclick="addToDisplay('3')">3</button>
+      <button onclick="addToDisplay('*')">*</button>
+      
+      <button onclick="addToDisplay('0')">0</button>
+      <button onclick="addToDisplay('.')">.</button>
+      <button onclick="clearDisplay()">AC</button>
+      <button onclick="addToDisplay('/')">/</button>
+    </div>
+    
+    <button onclick="calculate()" class="equal">=</button>
+    
+    <!-- Vēstures sekcija -->
+    <div class="history">
+      <h2>Vēsture</h2>
+      <ul id="historyList">
+      <!-- Vēstures ieraksti tiks pievienoti šeit -->
+      </ul>
+      <button onclick="clearHistory()">Dzēst vēsturi</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
